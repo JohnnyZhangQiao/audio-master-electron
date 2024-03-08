@@ -61,7 +61,7 @@ const options = computed(() => {
     },
   ];
 });
-const portalSite = location.origin;
+const portalSite = `${location.origin}${location.pathname}`;
 </script>
 
 <style lang="less" scoped>

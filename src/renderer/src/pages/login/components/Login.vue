@@ -69,7 +69,7 @@ const onSubmit = async (ctx: SubmitContext) => {
   if (ctx.validateResult === true) {
     login(formData.value.user, formData.value.password)
       .then(() => router.push('tts/creation'))
-      .catch();
+      .catch((e) => console.log(e));
   }
 };
 </script>

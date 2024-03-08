@@ -14,7 +14,7 @@ interface MyAxiosInstance extends AxiosInstance {
 const axiosInstance: MyAxiosInstance = axios.create({
   timeout: 30000,
   withCredentials: true,
-  baseURL: `//${ENV.TARGET_URL}`,
+  baseURL: `http://${ENV.TARGET_URL}`,
 });
 
 /**

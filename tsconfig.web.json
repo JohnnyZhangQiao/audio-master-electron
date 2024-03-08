@@ -13,6 +13,20 @@
       "@renderer/*": [
         "src/renderer/src/*"
       ]
-    }
+    },
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "lib": ["es2017", "esnext", "dom"],
+    "types": ["vite/client", "node"],
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "noEmit": true
   }
 }

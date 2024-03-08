@@ -6,3 +6,5 @@ out
 .vscode
 .idea
 .fleet
+src/renderer/src/components.d.ts
+src/renderer/src/auto-imports.d.ts

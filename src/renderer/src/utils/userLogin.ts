@@ -9,7 +9,9 @@ export const isLogin = () => {
   let user = null;
   try {
     user = JSON.parse(localStorage.getItem('user') || 'null');
-  } catch {}
+  } catch (e) {
+    console.log(e);
+  }
   if (!user) return false;
 
   const useUser = userStore();
