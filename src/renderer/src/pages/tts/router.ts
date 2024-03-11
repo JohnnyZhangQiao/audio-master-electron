@@ -13,7 +13,7 @@ const ttsRoutes: RouteRecordRaw = {
     icon: ChartBubbleIcon,
     requireAuth: true,
   },
-  beforeEnter: (to, from, next) => {
+  beforeEnter: (_to, _from, next) => {
     /**
      * 这里定义控制台单页应用进入前的导航守卫逻辑
      */
