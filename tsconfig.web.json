@@ -27,7 +27,6 @@
     "types": ["vite/client", "node"],
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
-    "noEmit": true,
-    "noUnusedLocals": false
+    "noEmit": true
   }
 }

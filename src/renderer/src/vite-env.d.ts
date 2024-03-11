@@ -11,3 +11,5 @@ declare const ENV: {
   TARGET_URL: string;
   NODE_ENV: 'test' | 'production' | 'local';
 };
+
+declare const window: Window;

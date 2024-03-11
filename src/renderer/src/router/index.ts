@@ -8,7 +8,7 @@ const modules = import.meta.glob('@renderer/pages/**/router.ts', { eager: true }
 for (const path in modules) {
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
-  const route = modules[path].default;
+  const route: never = modules[path].default;
   moduleRoutes.push(route);
 }
 
