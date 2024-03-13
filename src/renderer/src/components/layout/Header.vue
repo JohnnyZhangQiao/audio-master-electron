@@ -2,10 +2,6 @@
   <t-header>
     <t-head-menu :style="props.style">
       <template #logo>
-        <!--        <div class="logo-style" @click="router.push('/annotation')">-->
-        <!--          <img src="@renderer/assets/images/title.webp" alt="" />-->
-        <!--          <div v-if="env?.NODE_ENV === 'test'" class="platform-env">测试</div>-->
-        <!--        </div>-->
         <div class="logo-style">
           <a :href="portalSite"><img src="@renderer/assets/images/title.png" alt="" /></a>
         </div>
@@ -45,7 +41,6 @@ const props = withDefaults(defineProps<IProps>(), {
   toolsHidden: () => [],
   style: () => ({}),
 });
-const env = ref(ENV);
 const router = useRouter();
 const useUser = userStore();
 const useEvent = eventStore();
